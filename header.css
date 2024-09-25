@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+/*============= header tab started============== */
+.header_tab {
+  height: 5rem;
+  width: 100%;
+  display: none;
+}
+.navbar_tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: auto;
+}
+.navbar_tab div {
+  margin: 0 1rem;
+}
+
+
+
+.navbar_tab .logo {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_tab .logo img {
+  height: 60%;
+}
+.navbar_tab .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.navbar_tab .search input[type="search"] {
+  font-size: 1rem;
+  width: 95%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.navbar_tab .sign_in,
+.navbar_tab .kart {
+  width: 5%;
+  text-align: center;
+}
+
+/*============= header main started================== */
+
+.header_main {
+  border-bottom: 2px solid #6363635e;
+}
+
+.navbar_main {
+  background-color: white;
+  color: #636363;
+  margin: 0 1.5rem;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+     header                  nav                         section  one                   is start 
+    ------------------------------------------------------------------------------------------------------------------------------*/
+
+.one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+}
+
+div.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 53%;
+}
+
+.one .logo {
+  width: 15rem;
+}
+
+.one .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-left: 2rem;
+  
+}
+
+.search input[type="search"] {
+  font-size: 1rem;
+  width: 95%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------
+      header                  nav                      section  one         left                   ended 
+    ------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------------------------------
+      header           section one                                                         and right                   started 
+    ------------------------------------------------------------------------------------------------------------------------------*/
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  padding: 0.1rem;
+  text-wrap: nowrap;
+}
+
+.right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.8rem;
+}
+
+.right .sign_in {
+  position: relative;
+  text-wrap: wrap;
+}
+
+.right .sign_in .sign_in_form {
+  display: none;
+  position: absolute;
+  top: 3.2rem;
+  right: 0rem;
+  width: 15rem;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  padding-left: 1rem;
+}
+
+.sign_in_form ul {
+  padding-left: 1rem;
+}
+
+.sign_in_form input[type="button"] {
+  padding: 0.5rem;
+  margin: 4px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.right .language:hover,
+.right .contact_us:hover,
+.right .kart:hover {
+  background-color: rgba(161, 157, 157, 0.112);
+  color: black;
+  cursor: pointer;
+}
+
+.right .sign_in:hover {
+  background-color: rgba(161, 157, 157, 0.112);
+  color: black;
+  cursor: pointer;
+}
+
+.right .sign_in:hover .sign_in_form {
+  display: block;
+  background-color: white;
+}
+
+.right .sign_in .sign_in_form input[type="button"]:nth-child(4) {
+  background-color: #0672cb;
+  border-color: #0672cb;
+  color: white;
+}
+
+.right .kart {
+  position: relative;
+}
+
+.right .kart .kart_content {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  border: 2px solid black;
+  top: 3.4rem;
+  right: 0rem;
+  height: 7rem;
+  width: 14rem;
+  display: none;
+}
+
+.right .kart:hover .kart_content {
+  display: block;
+  background-color: white;
+}
+
+.right .kart .kart_content h3 {
+  padding-bottom: 1rem;
+}
+
+/*======================section two ==============*/
+
+.two {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  text-wrap: nowrap;
+}
+
+.two > div {
+  border-bottom: 2.5px solid transparent;
+  padding: 1rem 0.8rem;
+}
+
+.two > div:hover {
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.523);
+  background-color: rgba(161, 157, 157, 0.112);
+  cursor: pointer;
+}
+/*============= product section started================= */
+.product {
+  position: relative;
+}
+
+.product_menu {
+  display: none;
+  position: absolute;
+  /* margin: 0; */
+  top: 3.2rem;
+  left: 0;
+  width: 15rem;
+  height:31.1rem;
+  list-style: none;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+}
+.product_menu>div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product:hover .product_menu {
+  display: block;
+}
+
+.product_menu > div {
+  font-size: 1rem;
+  padding: 0.6rem;
+}
+
+.product_menu > div:hover {
+  background-color:rgb(229, 228, 228);
+}
+
+/*==================laptop==================*/
+
+.laptops {
+  position: relative;
+}
+
+.laptops:hover .laptops_menu {
+  display: block;
+}
+
+.laptops_menu {
+  position: absolute;
+  display: none;
+  width: 14rem;
+  background-color: #f4f4f5;
+  border: 2px solid rgba(0, 0, 0, 0.256);
+  line-height: 2.5rem;
+  left: 15.1rem;
+  top: -.1rem;
+  height:31.1rem;
+  
+}
+
+.laptops_menu div {
+ 
+  padding-left: 0.7rem;
+}
+.laptops_menu div:hover {
+  background-color: #d0d0d0;
+}
+
+/*==================solution==================*/
+
+/* heart  */
+
+
+/* heart  */

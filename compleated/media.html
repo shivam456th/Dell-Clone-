@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <style>
+        
+        .header_tab {
+            height: 5rem;
+            width: 100%;
+            
+        }
+        .navbar_tab {
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            margin: auto;
+        }
+        .navbar_tab  div{
+            margin: 0 1rem;
+        }
+        
+         .navbar_tab .logo {
+            height: 5rem;
+            display: flex ;
+            justify-content: center;
+            align-items: center;  
+        }
+         .navbar_tab .logo img {
+            height:60%;
+        }
+        .navbar_tab .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            margin: auto;
+        }
+
+        .navbar_tab .search input[type="search"] {
+            font-size: 1rem;
+            width: 95%;
+            height: 100%;
+            border: none;
+            outline: none;
+        }
+        .navbar_tab .sign_in,
+        .navbar_tab .kart {
+            width: 5%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header_tab">
+        <nav class="navbar_tab">
+            <div class="icon"><i class="fa-solid fa-bars"></i></div>
+            <div class="logo"><img src="logo media.jpg" 
+                height="5rem" alt=""></div>
+            
+            <div class="search">
+                <input type="search" placeholder="Search Dell" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="sign_in">
+                <i class="fa-regular fa-user"></i>
+                </div>
+            <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+        </nav>
+    </header>
+</body>
+</html>

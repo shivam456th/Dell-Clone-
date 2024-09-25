@@ -1,0 +1,100 @@
+#main {
+ width: 100%;
+  min-height: 100%;
+  background-color: #D9EBFE;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: hsla(0, 0%, 100%, 0.897);
+  height: 3.5rem;
+  overflow: hidden;
+  transition: height 0.8s ease;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pera {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ .Accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #2C3E50;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Accordion .question {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.Accordion span {
+  font-size: 1.5rem;
+  color: white;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.container_show .Accordion span {
+  transform: rotate(90deg);
+}
+
+
+.question_hide {
+  height: 2.3rem;
+}
+
+
+.container_show{
+  transition: 0.8s;
+  height: 7.3rem;
+}
+
+.down{
+  display: none;
+}
+.down_show{
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Accordion .question {
+    font-size: 1rem;
+  }
+  
+  .Accordion span {
+    font-size: 1.2rem;
+  }
+  
+  .pera {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Accordion .question {
+    font-size: 0.9rem;
+  }
+  
+  .Accordion span {
+    font-size: 1rem;
+  }
+  
+  .pera {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+}

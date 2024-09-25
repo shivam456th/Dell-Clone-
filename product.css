@@ -1,0 +1,138 @@
+.product-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #e4eaea;
+}
+
+.card {
+  top: 0;
+  width: 15rem;
+  height: 22rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0ffff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+.card:hover {
+  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transform: scale(1.05);
+}
+.card .like,
+.card .cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.447);
+  color: rgba(0, 0, 0, 0.613);
+  border-radius: 10px;
+  margin-left: 84%;
+  margin-top: 5%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  opacity: 0;
+}
+
+.card .like{
+  background-color: white;
+  top: 1rem;
+}
+.card .cart{
+  background-color: white;
+  
+  top: 4rem;
+}
+
+.card:hover .like,
+.card:hover .cart {
+  opacity: 1;
+}
+
+.card_content p{
+  padding-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.card_content p:first-child{
+  font-size: 1.2rem; 
+  font-weight: 600;
+  color: #0076ce;
+}
+
+
+
+.card_one {
+  background-image: url("compleated/laptop\ 1.avif");
+  width: 15rem;
+  height: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_two {
+  background-image: url("compleated/laptop\ 2.avif");
+  width: 15rem;
+  height: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_three {
+  background-image: url("compleated/laptop\ 3.avif");
+  width: 15rem;
+  height: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_four {
+  background-image: url("compleated/laptop\ 4.avif");
+  width: 15rem;
+  height: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_five {
+  background-image: url("compleated/laptop\ 9.avif");
+  width: 15rem;
+  height: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_six {
+  background-image: url("compleated/laptop\ 3.avif");
+  width: 15rem;
+  height: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_seven {
+  background-image: url("compleated/laptop\ 7.avif");
+  width: 15rem;
+  height: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_eight {
+  background-image: url("compleated/laptop\ 8.avif");
+  width: 15rem;
+  height: 15rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+

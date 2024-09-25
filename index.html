@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dell</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+        <link rel="shortcut icon" href="compleated/favicon-32x32.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="middle.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="canvas.css">
+    <link rel="stylesheet" href="Accordions.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+
+<body>
+    <div class="From_">
+                    <div class="w-full max-w-xs">
+                        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                            <div class="cross" onclick="Showform()">&#x292B</div>
+                          <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                              Username
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline Username" oninput="Validate_name()"  type="text" placeholder="Username">
+                            <p class="text-red-500 text-xs italic Username_notCorrect">Please choose a Username.</p>
+                          </div>
+                          <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="Email">
+                            Email.com
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline Email" oninput="Validate_email()"  type="text" placeholder="Email address">
+                            <p class="text-red-500 text-xs italic Email_notCorrect">Please choose a Email address.</p>
+                          </div>
+                          <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                             Contact number
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline Number" oninput="Validate_number()" type="text" placeholder="No.">
+                            <p class="text-red-500 text-xs italic Number_notCorrect">Enter your valide a Number</p>
+                          </div>
+                          <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                              Password
+                            </label>
+                            <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline input_password" oninput="Validate_password()"  type="password" placeholder="******************">
+                            <button class="eye" type="button" onmousedown="show()" onmouseup="hide()"><i class="ri-eye-line"></i></button>
+                            <!-- <input class="eye ri-eye-line" onmousedown="show()" onmouseup="hide()" type="button" id="box"> -->
+                            <p class="text-red-500 text-xs italic input_password_notCorrect">Please choose a password.</p>
+                          </div>
+                          <div class="flex items-center justify-between">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                              Sign In
+                            </button>
+                            <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                              Forgot Password?
+                            </a>
+                          </div>
+                        </form>
+                        <p class="text-center text-gray-500 text-xs">
+                          &copy;2020 Acme Corp. All rights reserved.
+                        </p>
+                      </div>
+    </div>
+    <div class="overlay" onclick="Show()"></div>
+    <!-- header tab started -->
+    <header class="header_tab">
+        <nav class="navbar_tab">
+            <div class="icon"><i class="fa-solid fa-bars"  onclick="Show()"></i></div>
+            <div class="logo"><img src="compleated/logo media.jpg" height="5rem" alt="">
+            </div>
+            
+            <div class="search">
+                <input type="search" placeholder="Search Dell" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="sign_in">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="kart"><i class="fa-solid fa-cart-shopping"></i></div>
+        </nav>
+    </header>
+
+    <!-- ======= header main started=======  -->
+
+    <header class="header_main">
+        <nav class="navbar_main">
+            <section class="one">
+                <div class="left">
+                    <div class="logo">
+                        <img src="compleated/logo.png" alt="logo" />
+                    </div>
+                    <div class="search">
+                        <input type="search" placeholder="Search Dell" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="sign_in">
+                        <i class="fa-regular fa-user"></i>
+                        Sign in
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="sign_in_form">
+                            <form>
+                                <h3>Welcome to Dell</h3>
+                                <p>My Account</p>
+                                <ul>
+                                    <li>Place order quickly and easily</li>
+                                    <li>View order and track your shipping status</li>
+                                    <li>Create and access a list of your products</li>
+                                </ul>
+                                <input type="button" value="Sign in">
+                                <input type="button" value="Create an Account">
+                                <input type="button" value="Premier Sign In">
+                                <input type="button" value="Partner Program Sign In">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="contact_us">
+                        <i class="fa-solid fa-headset"></i>
+                        Contact Us
+                    </div>
+                    <div class="language">
+                        <i class="fa-solid fa-globe"></i>
+                        Language
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="kart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="kart_content">
+                            <h3>Your Dell.com Carts</h3>
+                            <p>Your cart is empty</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="two">
+                <div class="ai">Artificial Intelligence</div>
+                <div class="product">
+                    Product
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="product_menu">
+                        <div class="laptops">
+                            Laptops<i class="fa-solid fa-angle-right"></i>
+                            <div class="laptops_menu">
+                                <div>Home</div>
+                                <div>Business</div>
+                            </div>
+                        </div>
+                        <div>Desktop & All-in-Ones <i class="fa-solid fa-angle-right"></i></div>
+                        <div>Gaming <i class="fa-solid fa-angle-right"></i> </div>
+                        <div>Workstations</div>
+                        <div>Thin Clients</div>
+                        <div>Apex</div>
+                        <div>Servers</div>
+                        <div>Data Storage</div>
+                        <div>Data Protection</div>
+                        <div>Networking</div>
+                        <div>Hyperconverged Infrastructure</div>
+                        <div>Monitors <i class="fa-solid fa-angle-right"></i></div>
+                        <div>Electronics & Accessories <i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="solution">
+                    Solution
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="solution_menu">
+                        
+                    </div>
+                </div>
+                <div class="services">
+                    Services
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="support">
+                    Support
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="deals">
+                    Deals
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="find_a_store">Find a Store</div>
+            </section>
+        </nav>
+    </header>
+
+    <!-- =======canvas section=======  -->
+        <div class="canvas">
+        <div class="canva" ><span>Artificial Intelligence</span></i>
+        <div class="one_menu">
+            <div class="gap"><i class="ri-arrow-left-s-line" onclick="hamburger()"></i><span>Back</span></div>
+            <div class="gap"><span>Products</span></div>
+            <div class="gap"> <span>Laptops</span><i class="ri-arrow-right-s-line r" onclick="next()"></i>
+            <div class="Next">
+            <div class="gap"><i class="ri-arrow-left-s-line" onclick="back()"></i><span>Back</span></div>
+                <div class="next">Laptops</div>
+                <div class="next">For Home</div>
+                <div class="next">For Business</div>
+            </div>
+        </div>
+            <div class="gap"><span>Desktops & All-in-Ones </span><i class="ri-arrow-right-s-line r"></i></div>
+            <div class="gap"><span>Gaming</span> <i class="ri-arrow-right-s-line r"></i></div>
+            <div class="gap"><span>Workstations</span></div>
+            <div class="gap"><span>three</span></div>
+        </div>
+        
+        </div>
+        <div class="canva" ><span>Product </span><i class="ri-arrow-right-s-line" onclick="hamburger()"></i></div>
+        <div class="canva" ><span>Solution </span><i class="ri-arrow-right-s-line"></i></div>
+        <div class="canva" ><span>Services</span><i class="ri-arrow-right-s-line"></i></div>
+        <div class="canva" ><span>Support</span><i class="ri-arrow-right-s-line"></i></div>
+        <div class="canva" ><span>Deals</span><i class="ri-arrow-right-s-line"></i></div>
+        <div class="canva" ><span>Find a Store</span><i class="ri-arrow-right-s-line"></i></div>
+        <div id="canva_line"></div>
+        <div class="canva" ><i class="ri-customer-service-fill"></i><span>Contact Us</span></div>
+        <div class="canva" ><i class="ri-global-line"></i><span>IN/EN</span></div>
+        </div>
+
+    <!-- =======canvas section=======  -->
+
+    <!--===================== slider ====================== -->
+    
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1647933292375-faa9b8401497?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dell-laptop"  width="200px">
+      </div>
+      <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1611258623154-c01feea09b1b?q=80&w=1428&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" width="400px">
+    </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1640955014216-75201056c829?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dell-laptop"  width="200px">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dell-laptop"  width="200px">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dell-laptop"  width="200px">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1629118938047-0f28bbe5af7a?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dell-laptop"  width="200px">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1553147324-7f50517efe04?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dell-laptop"  width="200px">
+    </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1651176118867-f4ac0b1d6da4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dell-laptop"  width="200px">
+    </div>
+      <div class="swiper-slide">
+        <img src="https://images.unsplash.com/photo-1558864559-ed673ba3610b?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="dell-laptop"  width="200px">
+    </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+    <!--============== product section started============= -->
+
+    <section class="product-section">
+
+        <!--==============card one==================-->
+        <div class="card">
+            <div class="card_one">
+                <div class="like"><i class="fa-solid fa-heart" onclick="heart(0)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Versatile Performance</p>
+                <p>Starting at ₹36,589.99</p>
+            </div>
+        </div>
+        <!--=============card two================ started -->
+        <div class="card">
+            <div class="card_two">
+                <div class="like"><i class="fa-solid fa-heart" onclick="heart(1)" ></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Versatile Performance</p>
+                <p>Starting at ₹36,589.99</p>
+            </div>
+        </div>
+        <!--=============card three started================ -->
+        <div class="card">
+            <div class="card_three">
+                <div class="like"><i class="fa-solid fa-heart" onclick="heart(2)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Versatile Performance</p>
+                <p>Starting at ₹36,589.99</p>
+            </div>
+        </div>
+        <!--=============card four started================ -->
+        <div class="card">
+            <div class="card_four">
+                <div class="like"><i class="fa-solid fa-heart" onclick="heart(3)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Versatile Performance</p>
+                <p>Starting at ₹36,589.99</p>
+            </div>
+        </div>
+        <!--=============== card five started ================= -->
+        <div class="card">
+            <div class="card_five">
+                <div class="like"><i class="fa-solid fa-heart" onclick="heart(4)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Versatile Performance</p>
+                <p>Starting at ₹36,589.99</p>
+            </div>
+        </div>
+        <!-- =============card six started ================= -->
+        <div class="card">
+            <div class="card_six">
+                <div class="like"><i class="fa-solid fa-heart" onclick="heart(5)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Versatile Performance</p>
+                <p>Starting at ₹36,589.99</p>
+            </div>
+        </div>
+        <!-- =============card seven started ================= -->
+        <div class="card">
+            <div class="card_seven">
+                <div class="like"><i class="fa-solid fa-heart" onclick="heart(6)" ></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Versatile Performance</p>
+                <p>Starting at ₹36,589.99</p>
+            </div>
+        </div>
+        <!-- =============card eight started ================= -->
+        <div class="card">
+            <div class="card_eight">
+                <div class="like"><i class="fa-solid fa-heart" onclick="heart(7)"></i></div>
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+            </div>
+            <div class="card_content">
+                <p>Versatile Performance</p>
+                <p>Starting at ₹36,589.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!--===============middle section started=================-->
+
+    <section class="middle_section">
+        <div class="middle_top">
+            <div class="middle_top_left">
+                <div class="middle_image">
+                    <img src="compleated/middle.jpg" alt="">
+                </div>
+                
+                <div class="middle_top_left_content">
+                    <p>
+                        Customers report dell APEX drives more effcient and effective IT operations with up to:
+                    </p>
+                    <a href="#">Explore Business Value of Dell APEX &nbsp;<i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </div>
+            <div class="middle_top_right_content">
+                <div>
+                    <p class="percent"><span class="Percent1">64</span>%</p>
+                    <p>faster to display new capacity</p>
+                </div>
+                <div>
+                    <p class="percent"><span class="Percent2">38</span>%</p>
+                    <p>lower 3 year cost of operations</p>
+                </div>
+                <div>
+                    <p class="percent"><span class="Percent3">59</span>%</p>
+                    <p>reduction of unplanned outages per year</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="middle_bottom">
+            <div class="middle_bottom_left">
+                <div>See Dell APEX workloads and industry use cases</div>
+                <a href="#">Explore Use Cases &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="Middle_bottom_right"><div>
+                Implement and stragize with Dell APEX value-added services
+                </div>
+                <a href="#">Experience Professional Services for Dell APEX &nbsp;<i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- =============================== Accordion ============================ -->
+<div id="main">
+    <div class="container">
+        <div onclick="accordion(event)" class="Accordion">
+            <div class="question">Company Overview</div>
+            <span>&gt;</span>
+        </div>
+        <div class="pera">Dell is a multinational technology company that develops, sells, repairs, and supports computers and related products and services. Founded by Michael Dell in 1984, the company has grown to become one of the largest technology companies in the world. Dell is known for its innovations in supply chain management and electronic commerce, particularly its direct-sales model.</div>
+    </div>
+    <div class="container">
+        <div onclick="accordion(event)" class="Accordion">
+            <div class="question"> Product Range</div>
+            <span>&gt;</span>
+        </div>
+        <div class="pera">Dell offers a wide range of products, including laptops, desktops, workstations, servers, storage devices, monitors, and accessories. The company's product lines include popular series like the Inspiron, XPS, Alienware, and Latitude, catering to both personal and professional needs.</div>
+    </div>
+    <div class="container">
+        <div onclick="accordion(event)" class="Accordion">
+            <div class="question">Innovation and Technology</div>
+            <span>&gt;</span>
+        </div>
+        <div class="pera">Dell is at the forefront of technological innovation, constantly introducing new features and improvements in its products. The company is known for its high-performance gaming systems under the Alienware brand, as well as its business-oriented Latitude laptops, which offer durability and security features for corporate users.</div>
+    </div>
+    <div class="container">
+        <div onclick="accordion(event)" class="Accordion">
+            <div class="question">Innovation and Technology</div>
+            <span>&gt;</span>
+        </div>
+        <div class="pera">Dell is at the forefront of technological innovation, constantly introducing new features and improvements in its products. The company is known for its high-performance gaming systems under the Alienware brand, as well as its business-oriented Latitude laptops, which offer durability and security features for corporate users.</div>
+    </div>
+    <div class="container">
+        <div onclick="accordion(event)" class="Accordion">
+            <div class="question"> Sustainability Efforts</div>
+            <span>&gt;</span>
+        </div>
+        <div class="pera">Dell is committed to sustainability and reducing its environmental impact. The company has initiatives to recycle old electronics, reduce energy consumption in its products, and use sustainable materials in manufacturing. Dell's focus on sustainability extends to its supply chain, where it works to ensure responsible sourcing and fair labor practices.</div>
+    </div>
+    <div class="container">
+        <div onclick="accordion(event)" class="Accordion">
+            <div class="question">Dell Technologies
+            </div>
+            <span>&gt;</span>
+        </div>
+        <div class="pera">In 2016, Dell merged with EMC Corporation, forming Dell Technologies, a family of businesses that provides the essential infrastructure for organizations to build their digital future. Dell Technologies focuses on driving digital transformation through a comprehensive portfolio of solutions, including cloud, data center, and cybersecurity.
+
+            You can structure the content under these headers in an accordion format, allowing users to click on each section to expand and learn more.</div>
+    </div>
+</div>
+  
+
+    <!--=================== footer section started ====================-->
+    <footer class="footer">
+        <div class="footer_box">
+            <div class="footer_left">
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="store_locator">Store Locator</a></li>
+                    <li><a href="contact_us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer_middle_one">
+                <ul>
+                    <li><a href="terms_condition">Terms & Conditions</a></li>
+                    <li><a href="return_policy">Returns Policy</a></li>
+                    <li><a href="privacy_policy">Privacy Policy</a></li>
+                    <li><a href="track_your_order">Track Your Order</a></li>
+                    <li><a href="return_exchange">Return & Exchange</a></li>
+                </ul>
+            </div>
+            <div class="footer_middle_two">
+                <ul>
+                    <li>Support/Whatsapp :</li>
+                    <li><a href="tel:+911234567890">
+                        +911234567890
+                    </a>
+
+                    </li>
+                    <li><a href="info">info@dell.in</a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                         <a href="">
+
+                             <i class="fa-brands fa-youtube"></i></li>
+                         </a> 
+                </ul>
+            </div>
+            <div class="footer_right">
+                <ul>
+                    <li>Sign Up Newsletter</li>
+                    <li>
+                        <p>Get updates by subscribe our weekly newsletter</p>
+                    </li>
+                    <li><input type="email" name="email" placeholder="Enter Your Email">
+                        <input type="button" value="Subscribe">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+    <script src="Accordions.js"></script>
+</body>
+</html>
